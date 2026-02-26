@@ -13,7 +13,7 @@ const transcriptData = [
 ];
 
 // Pointing to the locally generated Korean TTS .wav file
-const SAMPLE_AUDIO_URL = "/docent-audio.wav";
+const SAMPLE_AUDIO_URL = "./docent-audio.wav";
 
 document.addEventListener('DOMContentLoaded', () => {
     const audio = document.getElementById('audio-source');
