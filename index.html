@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Audio Docent - Starry Night</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script type="module" crossorigin src="./assets/index-BFTgEK7B.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-CAcv0o2I.css">
+  </head>
+  <body>
+    
+    <!-- Sticky Header -->
+    <header class="docent-header">
+      <button class="back-btn" aria-label="Go Back">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m15 18-6-6 6-6"/></svg>
+      </button>
+      <div class="header-logo">EXHIBITION DOCENT</div>
+      <div class="lang-selector">EN</div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-image-wrapper">
+        <img id="artwork-img" src="https://images.unsplash.com/photo-1579783902614-a3fb3927b6a5?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Artwork Hero" class="artwork-hero">
+        <div class="hero-gradient"></div>
+      </div>
+      
+      <!-- Details -->
+      <div class="artwork-info">
+        <h1 class="artwork-title">The Starry Night</h1>
+        <p class="artwork-artist">Vincent van Gogh, 1889</p>
+        <p class="artwork-medium">Oil on canvas | 73.7 cm × 92.1 cm</p>
+      </div>
+    </section>
+
+    <!-- Audio Player (Floating/Fixed Bottom or inline) -->
+    <section class="player-section inline-player">
+      <audio id="audio-source" src=""></audio>
+      
+      <div class="player-controls">
+        <button id="play-pause-btn" class="play-btn">
+          <svg id="icon-play" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="none"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+          <svg id="icon-pause" style="display:none;" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" stroke="none"><rect x="6" y="4" width="4" height="16"></rect><rect x="14" y="4" width="4" height="16"></rect></svg>
+        </button>
+        
+        <div class="timeline-wrapper">
+          <input type="range" id="progress-bar" value="0" max="100">
+          <div class="time-display">
+            <span id="current-time">0:00</span>
+            <span id="duration-time">--:--</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Transcript / Story -->
+    <section class="transcript-section">
+      <div class="script-header">
+        <h2>Audio Transcript</h2>
+      </div>
+      <div id="transcript-content" class="transcript-content">
+        <!-- JS will populate interactive sentences -->
+      </div>
+    </section>
+
+    <!-- Background decorative blur elements -->
+    <div class="bg-blur bg-blur-1"></div>
+    <div class="bg-blur bg-blur-2"></div>
+
+  </body>
+</html>
